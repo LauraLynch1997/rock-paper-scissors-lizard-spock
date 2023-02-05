@@ -6,7 +6,13 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log(isOdd); 
     if (isOdd === 1) {
         console.log(Math.max(human,computer));
-    } 
+    } else {
+        if (human === computer) {
+            console.log("draw");
+        } else {
+            console.log(Math.min(human,computer));
+        }
+    }    
 
   });
 
