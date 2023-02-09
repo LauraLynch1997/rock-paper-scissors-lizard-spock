@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const options = ["Rock", "Paper", "Scissors", "Lizard", "Cock"];
+    generateButtons(options);
     console.log("hello");
     let human = 2;
     let computer = 5;
@@ -16,5 +18,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   });
 
-
-  
+  function generateButtons(options) {
+    let html = ""
+    options.forEach((option) => {
+        console.log(option);
+        html += `<button class="button">${option}</button>`;
+    });
+    document.getElementById('buttons').innerHTML = html;
+}
