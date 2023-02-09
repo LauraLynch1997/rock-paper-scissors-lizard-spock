@@ -1,0 +1,91 @@
+
+.page-width {
+    max-width: 1000px;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 48px;
+    color: red;
+}
+
+body {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* text styles*/
+
+h1, h2, h3, h4, h5, h6 {
+   color: #0FA3B1;
+   font-family: 'Raleway', Helvetica, sans-serif;
+   margin-top: 0;
+}
+
+h1 {
+    font-size: 3.052rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.441rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.953rem;
+    font-weight: 400;
+}
+
+
+h4 {
+    font-size: 1.5635rem;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+p {
+    color: #181D27;
+    font-weight: 400;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #181D27;
+}
+a:visited { text-decoration: none; color:inherit; }
+a:hover { text-decoration: underline; color:#181D27; }
+a:focus { text-decoration: none; color:#181D27; }
+a:hover, a:active { text-decoration: none; color:#181D27 }
+
+
+a.button, .button{
+    padding: 15px 30px;
+    color: white;
+    background-color: #FF858D;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.button-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-title {
+    text-align: center;
+}
