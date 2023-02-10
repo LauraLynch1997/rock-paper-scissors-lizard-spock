@@ -19,7 +19,7 @@ body {
 /* text styles*/
 
 h1, h2, h3, h4, h5, h6 {
-   color: #0FA3B1;
+   color: #226CE0;
    font-family: 'Raleway', Helvetica, sans-serif;
    margin-top: 0;
 }
@@ -51,7 +51,7 @@ h5 {
 }
 
 p {
-    color: #181D27;
+    color: #313939;
     font-weight: 400;
     font-family: 'Raleway', Helvetica, sans-serif;
     font-size: 1rem;
@@ -60,18 +60,18 @@ p {
 
 a {
     text-decoration: none;
-    color: #181D27;
+    color: #313939;
 }
 a:visited { text-decoration: none; color:inherit; }
-a:hover { text-decoration: underline; color:#181D27; }
-a:focus { text-decoration: none; color:#181D27; }
-a:hover, a:active { text-decoration: none; color:#181D27 }
+a:hover { text-decoration: underline; color:#313939; }
+a:focus { text-decoration: none; color:#313939; }
+a:hover, a:active { text-decoration: none; color:#313939 }
 
 
 a.button, .button{
     padding: 15px 30px;
     color: white;
-    background-color: #FF858D;
+    background-color: #FA9F42;
     font-family: 'Raleway', Helvetica, sans-serif;
     font-size: 1rem;
     text-decoration: none;

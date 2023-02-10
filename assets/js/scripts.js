@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const options = ["Rock", "Paper", "Scissors", "Lizard", "Cock"];
+    const options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
     generateButtons(options);
     console.log("hello");
     let human = 2;
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log(Math.min(human,computer));
         }
     }    
-
+    
   });
 
   function generateButtons(options) {
@@ -26,3 +26,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     document.getElementById('buttons').innerHTML = html;
 }
+
+
