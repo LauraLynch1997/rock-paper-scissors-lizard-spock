@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", function() {
 function startGame(clickedButton){ 
     let playerIndex = options.indexOf(clickedButton.innerHTML);
     let computerIndex = Math.floor(Math.random() * ((4 - 1) - 0 + 1) + 0);
-    
     console.log(playerIndex);
     console.log(computerIndex);
-
+    document.getElementById("player-choice").innerHTML = options[playerIndex];
+    document.getElementById("computer-choice").innerHTML = options[computerIndex];
 }
 
