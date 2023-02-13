@@ -8,19 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     }
     console.log("hello");
-    let human = 2;
-    let computer = 5;
-    let isOdd = Math.abs((human-computer) % 2);
-    console.log(isOdd); 
-    if (isOdd === 1) {
-        console.log(Math.max(human,computer));
-    } else {
-        if (human === computer) {
-            console.log("draw");
-        } else {
-            console.log(Math.min(human,computer));
-        }
-    }    
     
   });
   function generateButtons(options) {
@@ -39,5 +26,20 @@ function startGame(clickedButton){
     console.log(computerIndex);
     document.getElementById("player-choice").innerHTML = options[playerIndex];
     document.getElementById("computer-choice").innerHTML = options[computerIndex];
+    whoWon(playerIndex, computerIndex);
+}
+
+function whoWon(player, computer){
+    let isOdd = Math.abs((player-computer) % 2);
+    console.log(isOdd); 
+    if (isOdd === 1) {
+        console.log(Math.max(player,computer));
+    } else {
+        if (player === computer) {
+            console.log("draw");
+        } else {
+            console.log(Math.min(player,computer));
+        }
+    }    
 }
 
