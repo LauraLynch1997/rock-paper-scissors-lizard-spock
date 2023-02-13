@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     const options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
     generateButtons(options);
+    const buttons = document.querySelectorAll("#buttons .button")
+    for (const button of buttons) {
+        button.addEventListener('click', function(event) {
+            console.log(button.innerHTML);
+        })
+    }
     console.log("hello");
     let human = 2;
     let computer = 5;
