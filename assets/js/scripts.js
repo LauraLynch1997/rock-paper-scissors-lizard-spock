@@ -1,10 +1,10 @@
+const options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 document.addEventListener("DOMContentLoaded", function() {
-    const options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
     generateButtons(options);
     const buttons = document.querySelectorAll("#buttons .button")
     for (const button of buttons) {
         button.addEventListener('click', function(event) {
-            console.log(button.innerHTML);
+            startGame(button);
         })
     }
     console.log("hello");
@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }    
     
   });
-
   function generateButtons(options) {
     let html = ""
     options.forEach((option) => {
@@ -33,4 +32,12 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('buttons').innerHTML = html;
 }
 
+function startGame(clickedButton){ 
+    let playerIndex = options.indexOf(clickedButton.innerHTML);
+    let computerIndex = Math.floor(Math.random() * ((4 - 1) - 0 + 1) + 0);
+    
+    console.log(playerIndex);
+    console.log(computerIndex);
+
+}
 
