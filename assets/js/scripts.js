@@ -26,19 +26,18 @@ function startGame(clickedButton){
     console.log(computerIndex);
     document.getElementById("player-choice").innerHTML = options[playerIndex];
     document.getElementById("computer-choice").innerHTML = options[computerIndex];
-    whoWon(playerIndex, computerIndex);
+    console.log(whoWon(playerIndex, computerIndex));
 }
 
 function whoWon(player, computer){
     let isOdd = Math.abs((player-computer) % 2);
-    console.log(isOdd); 
     if (isOdd === 1) {
-        console.log(Math.max(player,computer));
+        return Math.max(player,computer);
     } else {
         if (player === computer) {
-            console.log("draw");
+            return -1;
         } else {
-            console.log(Math.min(player,computer));
+            return Math.min(player,computer);
         }
     }    
 }
