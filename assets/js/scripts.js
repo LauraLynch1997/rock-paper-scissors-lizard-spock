@@ -1,4 +1,6 @@
 const options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+let winStreak = 0;
+
 document.addEventListener("DOMContentLoaded", function() {
     generateButtons(options);
     const buttons = document.querySelectorAll("#buttons .button")
@@ -45,10 +47,16 @@ function whoWon(player, computer){
 
 function printResults(playerIndex, results){
     if(results === -1){
+        winStreak = 0;
         document.getElementById("who-won").innerHTML = "Draw!";
+        document.getElementById("win-streak").innerHTML = winStreak;
     }else if(results === playerIndex){
+        winStreak++;
         document.getElementById("who-won").innerHTML = "You Won!";
+        document.getElementById("win-streak").innerHTML = winStreak;
     }else{
+        winStreak = 0;
         document.getElementById("who-won").innerHTML = "You Lost!";
+        document.getElementById("win-streak").innerHTML = winStreak;
     }
 }
