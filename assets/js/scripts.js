@@ -1,6 +1,7 @@
 const options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 let winStreak = 0;
 let playerWins = 0;
+let computerWins = 0;
 
 document.addEventListener("DOMContentLoaded", function() {
     generateButtons(options);
@@ -59,7 +60,9 @@ function printResults(playerIndex, results){
         document.getElementById("player-wins").innerHTML = playerWins;
     }else{
         winStreak = 0;
+        computerWins++;
         document.getElementById("who-won").innerHTML = "You Lost!";
         document.getElementById("win-streak").innerHTML = winStreak;
+        document.getElementById("computer-wins").innerHTML = computerWins;
     }
 }
