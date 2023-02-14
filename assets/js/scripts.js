@@ -26,7 +26,8 @@ function startGame(clickedButton){
     console.log(computerIndex);
     document.getElementById("player-choice").innerHTML = options[playerIndex];
     document.getElementById("computer-choice").innerHTML = options[computerIndex];
-    console.log(whoWon(playerIndex, computerIndex));
+    let results = whoWon(playerIndex, computerIndex);
+    printResults(playerIndex, results);
 }
 
 function whoWon(player, computer){
@@ -42,3 +43,12 @@ function whoWon(player, computer){
     }    
 }
 
+function printResults(playerIndex, results){
+    if(results === -1){
+        document.getElementById("who-won").innerHTML = "Draw!";
+    }else if(results === playerIndex){
+        document.getElementById("who-won").innerHTML = "You Won!";
+    }else{
+        document.getElementById("who-won").innerHTML = "You Lost!";
+    }
+}
