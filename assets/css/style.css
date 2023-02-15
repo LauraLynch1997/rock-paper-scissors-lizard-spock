@@ -89,8 +89,20 @@ a.button, .button{
     text-align: center;
 }
 
-.game-stats{
+.game-stats, .results{
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
+}
+
+.results *{
+    flex:1 0 33%;
+}
+
+.results #who-won{
+    text-align: center;
+}
+
+.results p:last-child{
+    text-align: end;
 }
