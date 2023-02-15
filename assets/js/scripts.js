@@ -18,6 +18,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
+//reset score counters
+document.getElementById("reset").addEventListener('click', function(event) {
+    //set all variables to 0
+    winStreak = 0;
+    playerWins = 0;
+    computerWins = 0;
+    //push data to frontend
+    document.getElementById("win-streak").innerHTML = winStreak;
+    document.getElementById("player-wins").innerHTML = playerWins;
+    document.getElementById("computer-wins").innerHTML = computerWins;
+})
+
 //funtion to generate the games buttons. Auto generates any ammount of buttons
 function generateButtons(options) {
     //initalise empty variable
