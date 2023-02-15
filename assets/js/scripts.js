@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-//reset score counters
+//reset game
 document.getElementById("reset").addEventListener('click', function(event) {
     //set all variables to 0
     winStreak = 0;
@@ -28,6 +28,11 @@ document.getElementById("reset").addEventListener('click', function(event) {
     document.getElementById("win-streak").innerHTML = winStreak;
     document.getElementById("player-wins").innerHTML = playerWins;
     document.getElementById("computer-wins").innerHTML = computerWins;
+
+    //remove previous games choices from front end
+    document.getElementById("who-won").innerHTML = '';
+    document.getElementById("player-choice").innerHTML = '';
+    document.getElementById("computer-choice").innerHTML = '';
 })
 
 //funtion to generate the games buttons. Auto generates any ammount of buttons
