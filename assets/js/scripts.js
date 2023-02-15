@@ -1,21 +1,15 @@
 //initalise game variables
-const options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+let options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 let winStreak = 0;
 let playerWins = 0;
 let computerWins = 0;
+
 //create game buttons and event listeners
 document.addEventListener("DOMContentLoaded", function() {
     //call generate buttons funtion to fill buttons with value from game array
     generateButtons(options);
-    //get all game buttons
-    const buttons = document.querySelectorAll("#buttons .button")
-    //loop through buttons and create event listener for click. Start game on click.
-    for (const button of buttons) {
-        button.addEventListener('click', function(event) {
-            //start game on click
-            startGame(button);
-        })
-    }
+    //create button event listeners
+    buttonListeners();
   });
 
 //reset game
@@ -35,6 +29,33 @@ document.getElementById("reset").addEventListener('click', function(event) {
     document.getElementById("computer-choice").innerHTML = '';
 })
 
+//add event listener for drop down
+const selectElement = document.querySelector('#list');
+selectElement.addEventListener('change', (event) => {
+    //if first option is chosen generate buttons for Lizard Spock
+   if(event.target.value == 1){
+      options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+      generateButtons(options);
+      buttonListeners();
+  //else generate buttons for rock paper scissors 
+  }else{
+      options = ["Rock", "Paper", "Scissors"];
+      generateButtons(options);
+      buttonListeners();
+  }
+});
+
+function buttonListeners(){
+    //get all game buttons
+    const buttons = document.querySelectorAll("#buttons .button")
+    //loop through buttons and create event listener for click. Start game on click.
+    for (const button of buttons) {
+        button.addEventListener('click', function(event) {
+            //start game on click
+            startGame(button);
+        })
+    }
+}
 //funtion to generate the games buttons. Auto generates any ammount of buttons
 function generateButtons(options) {
     //initalise empty variable
