@@ -72,11 +72,11 @@ a.button, .button{
     color: white;
     background-color: #FA9F42;
     font-family: 'Raleway', Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: x-large;
     text-decoration: none;
     border-radius: 4px;
     display: inline-block;
-    border: 0px solid;
+    border:
 }
 
 .button-list {
@@ -94,6 +94,7 @@ a.button, .button{
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .results *{
