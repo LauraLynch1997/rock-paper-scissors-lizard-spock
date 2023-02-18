@@ -111,7 +111,7 @@ header .page-width{
     flex:1 0 33%;
 }
 
-.results #who-won{
+.results #who-won, .results #result{
     text-align: center;
 }
 

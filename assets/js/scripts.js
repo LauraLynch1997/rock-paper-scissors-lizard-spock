@@ -84,7 +84,7 @@ function startGame(clickedButton){
     //get the winner using whoWon function   
     let results = whoWon(playerIndex, computerIndex);
     //print the results of the game on screen
-    printResults(playerIndex, results);
+    printResults(playerIndex, computerIndex, results);
 }
 
 //function to calculate the winner using algorithm
@@ -106,13 +106,14 @@ function whoWon(player, computer){
 }
 
 //function to print results of the game
-function printResults(playerIndex, results){
+function printResults(playerIndex, computerIndex, results){
     //if whoWon returned -1 it was a draw
     if(results === -1){
         //reset winStreak to 0
         winStreak = 0;
         //print the result on the screen and update the win streak
         document.getElementById("who-won").innerHTML = "Draw!";
+        document.getElementById("result").innerHTML = '';
         document.getElementById("win-streak").innerHTML = winStreak;
     //if whoWon returned the same value the player choose
     }else if(results === playerIndex){
@@ -122,6 +123,10 @@ function printResults(playerIndex, results){
         playerWins++;
         //print the result on the screen and update the win streak and player wins
         document.getElementById("who-won").innerHTML = "You Won!";
+        //explain the win condition
+        document.getElementById("result").innerHTML = `${options[playerIndex]} beats ${options[computerIndex]}`;
+        //set colour to green on win
+        document.getElementById("result").style.color = "green";
         document.getElementById("win-streak").innerHTML = winStreak;
         document.getElementById("player-wins").innerHTML = playerWins;
     //if whoWon did not return the same value as the player
@@ -132,6 +137,10 @@ function printResults(playerIndex, results){
         computerWins++;
         //print the result on the screen and update the win streak and computer wins
         document.getElementById("who-won").innerHTML = "You Lost!";
+        //explain the loss condition
+        document.getElementById("result").innerHTML = `${options[computerIndex]} beats ${options[playerIndex]}`;
+        //set colour to red on loss
+        document.getElementById("result").style.color = "red";
         document.getElementById("win-streak").innerHTML = winStreak;
         document.getElementById("computer-wins").innerHTML = computerWins;
     }
