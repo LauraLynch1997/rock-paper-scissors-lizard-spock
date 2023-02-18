@@ -90,6 +90,16 @@ a.button, .button{
     text-align: center;
 }
 
+header{
+    background-color: #FA9F42;
+}
+header .page-width{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .game-stats, .results{
     display: flex;
     justify-content: space-between;
@@ -110,7 +120,10 @@ a.button, .button{
 }
 
 #reset{
-    float: right;
+    display: block;
+    margin: 0 auto;
+}
+#reset, #modelBtn{
     padding:10px 20px;
     background-color: #226CE0;
 }
