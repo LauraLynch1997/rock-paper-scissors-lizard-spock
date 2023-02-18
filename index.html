@@ -17,34 +17,37 @@
 <body>
     <header>
         <div class="page-width">
-            <button id="modelBtn" class="button">Rules</button>
-            <h1 id ="title" class="main-title">Rock, Paper, Scissors, Lizard, Spock</h1>
-            <select class= "test" id="list">
-                <option value="1">Game 1</option>
-                <option value="2">Game 2</option>
-            </select>
+            <div class="header-container">
+                <button id="modelBtn" class="button">Rules</button>
+                <h1 id ="title" class="main-title">Rock, Paper, Scissors, Lizard, Spock</h1>
+                <select class= "test" id="list">
+                    <option value="1">Game 1</option>
+                    <option value="2">Game 2</option>
+                </select>
+            </div>
         </div>
     </header>
     <section class="game">
         <div class="page-width">
-            <div class="game-stats">
-                <p>Player Wins:<span id="player-wins">0</span></p>
-                <p>Win Streak:<span id="win-streak">0</span></p>
-                <p>Computer Wins:<span id="computer-wins">0</span></p>
-            </div>
-            <div id="buttons" class="button-list">
-                    
-            </div>
-            <div class="results">
-                <p>You Have Chosen: <span id="player-choice"></span></p>
-                <div>
-                    <h2 id="who-won"></h2>
-                    <h3 id="result"></h3>
+            <div class="game-container">
+                <div class="game-stats">
+                    <p>Player Wins:<span id="player-wins">0</span></p>
+                    <p>Win Streak:<span id="win-streak">0</span></p>
+                    <p>Computer Wins:<span id="computer-wins">0</span></p>
                 </div>
-                <p>The Computer Has Chosen: <span id="computer-choice"></span></p>    
+                <div id="buttons" class="button-list">
+                        
+                </div>
+                <div class="results">
+                    <p>You Have Chosen: <span id="player-choice"></span></p>
+                    <div>
+                        <h2 id="who-won"></h2>
+                        <h3 id="result"></h3>
+                    </div>
+                    <p>The Computer Has Chosen: <span id="computer-choice"></span></p>    
+                </div>
+                <button id="reset" class="button">Reset Counters</button>
             </div>
-            <button id="reset" class="button">Reset Counters</button>
-           
         </div>
     </section>
     <div id="myModal" class="modal">

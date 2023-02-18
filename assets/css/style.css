@@ -1,9 +1,9 @@
 
 .page-width {
-    max-width: 1000px;
-    width: 1000px;
+    max-width: 1024px;
+    width: 1024px;
     margin: 0 auto;
-    padding: 48px;
+    padding:0 32px;
 }
 
 body {
@@ -77,7 +77,6 @@ a.button, .button{
     text-decoration: none;
     border-radius: 4px;
     display: inline-block;
-    border:
 }
 
 .button-list {
@@ -85,8 +84,12 @@ a.button, .button{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    column-gap: 16px;
 }
 
+.button-list .button{
+    width: calc(20% - 16px * 4 / 5);
+}
 .main-title {
     text-align: center;
     font-size: 2.441rem;
@@ -96,16 +99,18 @@ a.button, .button{
 header{
     background-color: #FA9F42;
 }
-header .page-width{
+
+header .header-container{
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
 }
 
-.game .page-width{
+.game-container{
     background-color: white;
     margin: 80px auto;
+    padding: 32px;
 }
 .game-stats, .results{
     display: flex;
@@ -175,4 +180,43 @@ header .page-width{
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .page-width {
+        max-width: 100%;
+        width: 100%;
+        padding: 16px;
+    }
+    header .header-container{
+        flex-wrap: wrap;
+    }
+    header .header-container h1{
+        width: 100%;
+        order: 1;
+        margin-top: 16px;
+        font-size: 1.953rem;
+    }
+    .button-list {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .button-list .button{
+        margin-bottom: 16px;
+        width: calc(33.33% - 16px * 2 / 3);
+        flex-grow: 1;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .button-list .button{
+        width: calc(50% - 16px / 2 );
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .button-list .button{
+        margin-bottom: 16px;
+        width: 100%;
+    }
   }
