@@ -27,6 +27,7 @@ document.getElementById("reset").addEventListener('click', function(event) {
     document.getElementById("who-won").innerHTML = '';
     document.getElementById("player-choice").innerHTML = '';
     document.getElementById("computer-choice").innerHTML = '';
+    document.getElementById("result").innerHTML = ''
 })
 
 //add event listener for drop down
