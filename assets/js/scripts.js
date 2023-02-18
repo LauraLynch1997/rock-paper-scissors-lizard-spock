@@ -35,11 +35,13 @@ selectElement.addEventListener('change', (event) => {
     //if first option is chosen generate buttons for Lizard Spock
    if(event.target.value == 1){
       options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+      document.getElementById("title").innerHTML = 'Rock, Paper, Scissors, Lizard, Spock';
       generateButtons(options);
       buttonListeners();
   //else generate buttons for rock paper scissors 
   }else{
       options = ["Rock", "Paper", "Scissors"];
+      document.getElementById("title").innerHTML = 'Rock, Paper, Scissors';
       generateButtons(options);
       buttonListeners();
   }
