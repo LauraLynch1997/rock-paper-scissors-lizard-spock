@@ -77,6 +77,8 @@ a.button, .button{
     text-decoration: none;
     border-radius: 4px;
     display: inline-block;
+    border:0px solid;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .button-list {
@@ -89,11 +91,17 @@ a.button, .button{
 
 .button-list .button{
     width: calc(20% - 16px * 4 / 5);
+    
+}
+
+.alt.button-list .button{
+    width: calc(33.33% - 16px * 2 / 3);
 }
 .main-title {
     text-align: center;
     font-size: 2.441rem;
     margin-bottom: 0;
+    color:white;
 }
 
 header{
@@ -209,14 +217,46 @@ header .header-container{
   }
 
   @media only screen and (max-width: 650px) {
-    .button-list .button{
+    .button-list .button, .alt.button-list .button{
         width: calc(50% - 16px / 2 );
+    }
+    .game-container{
+        margin: 32px auto;
+        padding: 16px;
     }
   }
 
-  @media only screen and (max-width: 650px) {
-    .button-list .button{
-        margin-bottom: 16px;
+  @media only screen and (max-width: 450px) {
+    .button-list .button, .alt.button-list .button{
         width: 100%;
     }
+
+    .game-stats{
+        flex-wrap: wrap;
+    }
+    .game-stats p{
+       width: 50%;
+       flex-grow: 1;
+    }
+    .game-stats .win-streak{
+        order:3;
+        text-align: center;
+        margin-bottom: 0;
+     }
+     .results{
+        flex-wrap: wrap;
+    }
+    .results * {
+        flex: 1 0 100%;
+        text-align: center;
+    }
+    .results p:last-child{
+        text-align: center;
+    }
+    .results .results-details{
+        order:3;
+        text-align: center;
+        margin-bottom: 0;
+     }
+  }
   }
