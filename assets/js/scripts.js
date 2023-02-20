@@ -1,5 +1,27 @@
 //initalise game variables
-let options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+//let options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+let options = [
+    {
+        "name":"Rock",
+        "icon":"fa-hand-back-fist"
+    },
+    {
+        "name":"Paper",
+        "icon":"fa-hand"
+    },
+    {
+        "name":"Scissors",
+        "icon":"fa-hand-scissors"
+    },
+    {
+        "name":"Lizard",
+        "icon":"fa-hand-lizard"
+    },
+    {
+        "name":"Spock",
+        "icon":"fa-hand-spock"
+    }
+]
 let winStreak = 0;
 let playerWins = 0;
 let computerWins = 0;
@@ -35,7 +57,28 @@ const selectElement = document.querySelector('#list');
 selectElement.addEventListener('change', (event) => {
     //if first option is chosen generate buttons for Lizard Spock
    if(event.target.value == 1){
-      options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+      options = [
+        {
+            "name":"Rock",
+            "icon":"fa-hand-back-fist"
+        },
+        {
+            "name":"Paper",
+            "icon":"fa-hand"
+        },
+        {
+            "name":"Scissors",
+            "icon":"fa-hand-scissors"
+        },
+        {
+            "name":"Lizard",
+            "icon":"fa-hand-lizard"
+        },
+        {
+            "name":"Spock",
+            "icon":"fa-hand-spock"
+        }
+    ];
       document.getElementById("title").innerHTML = 'Rock, Paper, Scissors, Lizard, Spock';
       document.getElementById("buttons").classList.remove("alt");
       //change rules
@@ -45,7 +88,20 @@ selectElement.addEventListener('change', (event) => {
       buttonListeners();
   //else generate buttons for rock paper scissors 
   }else{
-      options = ["Rock", "Paper", "Scissors"];
+      options = [
+        {
+            "name":"Rock",
+            "icon":"fa-hand-back-fist"
+        },
+        {
+            "name":"Paper",
+            "icon":"fa-hand"
+        },
+        {
+            "name":"Scissors",
+            "icon":"fa-hand-scissors"
+        }
+    ];
       document.getElementById("title").innerHTML = 'Rock, Paper, Scissors';
       document.getElementById("buttons").classList.add("alt");
       //change rules
@@ -74,7 +130,7 @@ function generateButtons(options) {
     //loop through values in array
     options.forEach((option) => {
         //create button using value from current index in array
-        html += `<button class="button">${option}</button>`;
+        html += `<button class="button">${option.name}<br><i class="fa-solid ${option.icon}"></i></button>`;
     });
     //fill button container with buttons
     document.getElementById('buttons').innerHTML = html;
@@ -83,13 +139,13 @@ function generateButtons(options) {
 //main game funtion
 function startGame(clickedButton){
     //get index of array that the player has choosen 
-    let playerIndex = options.indexOf(clickedButton.innerHTML);
+    let playerIndex = options.map(e => e.name).indexOf(clickedButton.firstChild.nodeValue);
     //get computers index using random generator from 0 to array length
     let computerIndex = Math.floor(Math.random() * ((options.length - 1) - 0 + 1) + 0);
     //set the players visual indicator to their choice
-    document.getElementById("player-choice").innerHTML = options[playerIndex];
+    document.getElementById("player-choice").innnerHTML = options[playerIndex].name;
     //show player the computers choice
-    document.getElementById("computer-choice").innerHTML = options[computerIndex];
+    document.getElementById("computer-choice").innerHTML = options[computerIndex].name;
     //get the winner using whoWon function   
     let results = whoWon(playerIndex, computerIndex);
     //print the results of the game on screen
@@ -133,7 +189,7 @@ function printResults(playerIndex, computerIndex, results){
         //print the result on the screen and update the win streak and player wins
         document.getElementById("who-won").innerHTML = "You Won!";
         //explain the win condition
-        document.getElementById("result").innerHTML = `${options[playerIndex]} beats ${options[computerIndex]}`;
+        document.getElementById("result").innerHTML = `${options[playerIndex].name} beats ${options[computerIndex].name}`;
         //set colour to green on win
         document.getElementById("result").style.color = "green";
         document.getElementById("win-streak").innerHTML = winStreak;
@@ -147,7 +203,7 @@ function printResults(playerIndex, computerIndex, results){
         //print the result on the screen and update the win streak and computer wins
         document.getElementById("who-won").innerHTML = "You Lost!";
         //explain the loss condition
-        document.getElementById("result").innerHTML = `${options[computerIndex]} beats ${options[playerIndex]}`;
+        document.getElementById("result").innerHTML = `${options[computerIndex].name} beats ${options[playerIndex].name}`;
         //set colour to red on loss
         document.getElementById("result").style.color = "red";
         document.getElementById("win-streak").innerHTML = winStreak;
