@@ -105,8 +105,8 @@ select{
     border-radius: 4px;
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
     border: 0 solid;
-    padding: 16px;
-    font-size: 24px;
+    padding: 8px;
+    font-size: 16px;
 }
 
 select option{
