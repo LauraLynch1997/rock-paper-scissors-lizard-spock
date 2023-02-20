@@ -201,6 +201,13 @@ header .header-container{
     cursor: pointer;
   }
 
+  #game1, #game2{
+    display: none;
+  }
+
+  #game1.show, #game2.show{
+    display: block;
+  }
   @media only screen and (max-width: 1024px) {
     .page-width {
         max-width: 100%;

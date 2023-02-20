@@ -38,6 +38,9 @@ selectElement.addEventListener('change', (event) => {
       options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
       document.getElementById("title").innerHTML = 'Rock, Paper, Scissors, Lizard, Spock';
       document.getElementById("buttons").classList.remove("alt");
+      //change rules
+      document.getElementById("game2").classList.remove("show");
+      document.getElementById("game1").classList.add("show");
       generateButtons(options);
       buttonListeners();
   //else generate buttons for rock paper scissors 
@@ -45,6 +48,9 @@ selectElement.addEventListener('change', (event) => {
       options = ["Rock", "Paper", "Scissors"];
       document.getElementById("title").innerHTML = 'Rock, Paper, Scissors';
       document.getElementById("buttons").classList.add("alt");
+      //change rules
+      document.getElementById("game1").classList.remove("show");
+      document.getElementById("game2").classList.add("show");
       generateButtons(options);
       buttonListeners();
   }
