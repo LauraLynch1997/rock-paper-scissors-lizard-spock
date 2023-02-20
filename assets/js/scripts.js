@@ -143,7 +143,7 @@ function startGame(clickedButton){
     //get computers index using random generator from 0 to array length
     let computerIndex = Math.floor(Math.random() * ((options.length - 1) - 0 + 1) + 0);
     //set the players visual indicator to their choice
-    document.getElementById("player-choice").innnerHTML = options[playerIndex].name;
+    document.getElementById("player-choice").innerHTML = options[playerIndex].name;
     //show player the computers choice
     document.getElementById("computer-choice").innerHTML = options[computerIndex].name;
     //get the winner using whoWon function   
