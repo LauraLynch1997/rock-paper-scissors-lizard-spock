@@ -99,14 +99,19 @@ a.button, .button{
 }
 
 select{
+    font-family: 'Raleway', Helvetica, sans-serif;
     background: #226CE0;
     color: white;
     border-radius: 4px;
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
     border: 0 solid;
     padding: 16px;
+    font-size: 24px;
 }
 
+select option{
+    font-size: 16px;
+}
 .main-title {
     text-align: center;
     font-size: 2.441rem;
@@ -123,6 +128,7 @@ header .header-container{
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .game-container{
