@@ -1,108 +1,146 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock Paper Scissors Lizard Spock
+Rock Paper Scissors Lizard Spock is a more advanced version of the classic hand game Rock Paper Scissors. The popularity of this version of the game emerged in 2008 after the airing of The Big Bang Theory episode that introduced the game originally created by Sam Kass and Karen Bryla http://www.samkass.com/theories/RPSSL.html. Many online versions of the game began to appear since then to entertain fans across the world wide web.
 
-Welcome LauraLynch1997,
+This version of the game aided the developer in understanding and implementing the fundamentals of Java Script whilst also keeping user experience in mind.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Existing Features:
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+### The Header Section
+This area contains the title of the game in the centre so users know exactly what game they are playing. A rules button to the left, once clicked, reveals an image depiction of the rules of the game for players to understand. written description for vision impaired users.
+A dropdown button to the right, once clicked, gives the user the option of playing either the advanced Rock Paper Scissors Lizard Spock or the classic Rock Paper Scissors game against the computer, with the title changing depending on the game chosen.
 
-## Gitpod Reminders
+### Game Area
+This area contains several components.
+The top of the area contains a score-tracker so the user can keep track of how many times they have won or lost as well as streak-counter to show how many games in a row have been won. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The centre of the area contains the button options for the game itself. The buttons have text and icon depictions of the options for optimum user experience. 
+Once an option has been selected, the site displays what the user and the computer have chosen. At the same time, it will show whether the result is a win, lose or draw. Underneath the prompt, it will display why the user won or lost with phrases such as “Rock beats Paper” etc. This aids in the user’s understanding of the game by explaining why they won/lost.
 
-`python3 -m http.server`
+The bottom of the area contains a Reset Counters button that, when clicked, will reset the score-tracker back to zero. This is an added function for users to challenge themselves to obtain higher win streaks or to simply start afresh. 
 
-A blue button should appear to click: _Make Public_,
+### Potential Features to Add
 
-Another blue button should appear to click: _Open Browser_.
+A multiplayer option to play the game against friends rather than just the computer. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Design
 
-A blue button should appear to click: _Make Public_,
+### Website Comparisons
 
-Another blue button should appear to click: _Open Browser_.
+The following websites with the same gameplay as this site were examined for layout, code and content ideas:
+- https://veerasundar.com/rock-paper-scissor-lizard-spoc/
+- https://serialized.net/app/rpsls/
+- https://rpsls.net/#1saat
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+### Images
+The image depicting the rules of the games were taken from insert here . The images help to give visual representation of the rules of the game to the user.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Fonts
 
-------
+Fonts were chosen using Google Fonts
 
-## Release History
+Raleway was chosen as the main font, with helvetica and sans-serif set as the alternatives. Raleway was used on the love-maths project which the developer thought was visually pleasing and would suit the game being developed.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Colour Scheme
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Colour scheme was selected using Coolors
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Wireframes
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Desktop version
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Tablet version
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Mobile Version
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Testing
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Validator Testing
+1. HTML
+- HTML was tested with W3C Markup Validation Service
+- Initial testing showed some typescript errors that were easily corrected.
+- Initial testing also warned of empty h2 and h3 headings. This is due to what was it due to and commented accordingly to kerb any confusion when reading the code.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+2. CSS
+- CSS was tested with W3C CSS Validation Service
+- 0 errors returned.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+3. JAVASCRIPT
+- Metrics:There are 14 functions in this file.
+- Function with the largest signature take 3 arguments, while the median is 1.
+- Largest function has 19 statements in it, while the median is 2.5.
+- The most complex function has a cyclomatic complexity value of 3 while the median is 1.
+- One Warning Returned:
+"Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (startGame)." This warning was noted. The developer added comments to the function to prevent confusing semantics.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+4. LIGHTHOUSE
+Initial testing in lighthouse showed poor performance of 46 due to image dimensions.
+Once dimensions were reduced, performance improved dramatically.
+Lighthouse results
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Browser Display
+The completed site displays correctly on Google Chrome, Microsoft Edge and Safari browsers.
+Screen Sizes
+The completed site displays correctly on a variety of screen sizes, including desktop, tablet, iphone and Samsung phones.
+Desktop Display SCREENSHOT
+Tablet Display SCREENSHOT
+Mobile Display SCREENSHOT
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Technologies Used
 
-------
+### Languages Used
+- HTML5
+- CSS3
+- JavaScript
 
-## FAQ about the uptime script
+### Frameworks, Libraries & Programs Used
+1. Balsamiq
+- Used to create wireframes for the site prior to coding.
+2. Google Fonts
+- Used to import selected fonts into style.css file.
+3. Font Awesome
+- Used to add icons to buttons.
+4. Coolers
+- Used to select a simplistic, pleasing colour pallet.
+5. Git
+- Used for version control.
+6. Github
+- Used to store the site's code once pushed from Git.
+7. ImageOptim
+- Used to compress the sites images to improve page speed.
 
-**Why have you added this script?**
+## Deployment
+The site was deployed to GitHub pages as follows:
+Select settings in Github repository.
+Select pages from the sidebar.
+From the drop-down menu below the Source heading, select 'Deploy from a branch'.
+From the drop-down menu below the Branch heading, select main branch. Then select root from the folder drop-down menu.
+Select Save.
+The page will then show a ribbon display to indicate the successful deployment.
+The live link can be found here - INSERT LIVE LINK HERE
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+## Credits
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Content
+All text content and rules for the game were sourced from WIKIPEDIA LINK.
+The steps in the Deployment section of this README.md file was sourced from the Code Institute Sample ReadMe
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Media
+All images used were from Unsplash
+All icons used were from Font Awesome
+Colour scheme was selected using Coolors
+Flexbox Froggy was used to learn and impliment flex styling in the style.css file.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Programming Solutions
 
-**So….?**
+## Acknowledgements
+My fellow classmates for collaborative problem-solving with JavaScript.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
