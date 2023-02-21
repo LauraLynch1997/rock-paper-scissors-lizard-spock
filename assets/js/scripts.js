@@ -21,7 +21,7 @@ let options = [
         "name":"Spock",
         "icon":"fa-hand-spock"
     }
-]
+];
 let winStreak = 0;
 let playerWins = 0;
 let computerWins = 0;
@@ -49,8 +49,8 @@ document.getElementById("reset").addEventListener('click', function(event) {
     document.getElementById("who-won").innerHTML = '';
     document.getElementById("player-choice").innerHTML = '';
     document.getElementById("computer-choice").innerHTML = '';
-    document.getElementById("result").innerHTML = ''
-})
+    document.getElementById("result").innerHTML = '';
+});
 
 //add event listener for drop down
 const selectElement = document.querySelector('#list');
@@ -114,19 +114,19 @@ selectElement.addEventListener('change', (event) => {
 
 function buttonListeners(){
     //get all game buttons
-    const buttons = document.querySelectorAll("#buttons .button")
+    const buttons = document.querySelectorAll("#buttons .button");
     //loop through buttons and create event listener for click. Start game on click.
     for (const button of buttons) {
         button.addEventListener('click', function(event) {
             //start game on click
             startGame(button);
-        })
+        });
     }
 }
 //funtion to generate the games buttons. Auto generates any ammount of buttons
 function generateButtons(options) {
     //initalise empty variable
-    let html = ""
+    let html = "";
     //loop through values in array
     options.forEach((option) => {
         //create button using value from current index in array
@@ -210,7 +210,6 @@ function printResults(playerIndex, computerIndex, results){
         document.getElementById("computer-wins").innerHTML = computerWins;
     }
 }
-
 // Get the modal
 let modal = document.getElementById("myModal");
 
@@ -223,16 +222,16 @@ let span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
