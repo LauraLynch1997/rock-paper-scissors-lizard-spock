@@ -1,4 +1,5 @@
 
+/* Page styles */
 .page-width {
     max-width: 1024px;
     width: 1024px;
@@ -16,8 +17,7 @@ body {
     box-sizing: border-box;
 }
 
-/* text styles*/
-
+/* Text styles*/
 h1, h2, h3, h4, h5, h6 {
    color: #226CE0;
    font-family: 'Raleway', Helvetica, sans-serif;
@@ -38,7 +38,6 @@ h3 {
     font-size: 1.953rem;
     font-weight: 400;
 }
-
 
 h4 {
     font-size: 1.5635rem;
@@ -62,12 +61,13 @@ a {
     text-decoration: none;
     color: #313939;
 }
+
 a:visited { text-decoration: none; color:inherit; }
 a:hover { text-decoration: underline; color:#313939; }
 a:focus { text-decoration: none; color:#313939; }
 a:hover, a:active { text-decoration: none; color:#313939 }
 
-
+/* Button styling */
 a.button, .button{
     padding: 15px 30px;
     color: white;
@@ -91,7 +91,6 @@ a.button, .button{
 
 .button-list .button{
     width: calc(20% - 16px * 4 / 5);
-    
 }
 
 .alt.button-list .button{
@@ -112,6 +111,8 @@ select{
 select option{
     font-size: 16px;
 }
+
+/* Header styles */
 .main-title {
     text-align: center;
     font-size: 2.441rem;
@@ -131,6 +132,7 @@ header .header-container{
     align-items: center;
 }
 
+/* Game styles */
 .game-container{
     background-color: white;
     margin: 80px auto;
@@ -164,7 +166,7 @@ header .header-container{
     background-color: #226CE0;
 }
 
-/* The Modal (background) */
+/* The modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -178,7 +180,7 @@ header .header-container{
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  /* Modal Content/Box */
+  /* Modal content/box */
   .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
@@ -192,7 +194,8 @@ header .header-container{
     display: block;
     width: 100%;
   }
-  /* The Close Button */
+
+  /* The close button */
   .close {
     color: #aaa;
     float: right;
@@ -214,6 +217,8 @@ header .header-container{
   #game1.show, #game2.show{
     display: block;
   }
+
+  /* Media queries */
   @media only screen and (max-width: 1024px) {
     .page-width {
         max-width: 100%;
