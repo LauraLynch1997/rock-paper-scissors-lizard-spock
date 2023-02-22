@@ -192,7 +192,7 @@ header .header-container{
   .modal-content img{
     margin: 0 auto;
     display: block;
-    width: 100%;
+    width: 50%;
   }
 
   /* The close button */
@@ -243,6 +243,9 @@ header .header-container{
         width: calc(33.33% - 16px * 2 / 3);
         flex-grow: 1;
     }
+    .modal-content img{
+        width: 100%;
+      }
   }
 
   @media only screen and (max-width: 650px) {
