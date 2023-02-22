@@ -141,7 +141,7 @@ The site was deployed to [Github](https://github.com/) pages as follows:
 4. From the drop-down menu below the Branch heading, select main branch. Then select root from the folder drop-down menu.
 5. Select Save.
 6. The page will then show a ribbon display to indicate the successful deployment.
-7. The live link can be found here - INSERT LIVE LINK HERE
+7. The live link can be found here: https://lauralynch1997.github.io/rock-paper-scissors-lizard-spock/
 
 
 ## Credits
