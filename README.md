@@ -149,14 +149,16 @@ The site was deployed to [Github](https://github.com/) pages as follows:
 ### Content
 - All text content and rules for the game were sourced from [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors).
 - The steps in the Deployment section of this README.md file was sourced from the [Code Institute Sample ReadMe](https://github.com/Code-Institute-Solutions/SampleREADME).
-- The algorithm used for the JS function was sourced from ELEGANT SOLUTION
 
 ### Media
-Rules images were sourced from [openclipart.org](https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock) and [wikipedia.org](https://en.wikipedia.org/wiki/Rock_paper_scissors)
-All icons used were from [Font Awesome](https://fontawesome.com/)
-Colour scheme was selected using [Coolors](https://coolors.co/)
+- Rules images were sourced from [openclipart.org](https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock) and [wikipedia.org](https://en.wikipedia.org/wiki/Rock_paper_scissors)
+- All icons used were from [Font Awesome](https://fontawesome.com/)
+- Colour scheme was selected using [Coolors](https://coolors.co/)
 
 ## Programming Solutions
+- The algorithm used to calculate who wins was sourced from [eduherminio.github.io](https://eduherminio.github.io/blog/rock-paper-scissors-lizard-spock/#:~:text=Spock%20beats%20Rock%20%E2%86%92%204,beats%204%20%E2%86%92%20%3E%20number%20wins).
+- [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp) was used for creating the modal box.
+- [tutorialspoint.com](https://www.tutorialspoint.com/why-addeventlistener-to-select-element-does-not-work-in-javascript) was used for adding event listeners to buttons.
 
 ## Acknowledgements
 My fellow classmates for collaborative problem-solving with JavaScript.
