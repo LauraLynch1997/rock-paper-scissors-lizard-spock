@@ -102,7 +102,7 @@ selectElement.addEventListener('change', (event) => {
             "icon":"fa-hand-scissors"
         }
     ];
-      document.getElementById("title").innerHTML = 'Rock, Paper, Scissors';
+      document.getElementById("title").innerHTML = 'Rock Paper Scissors';
       document.getElementById("buttons").classList.add("alt");
       //change rules
       document.getElementById("game1").classList.remove("show");

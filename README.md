@@ -33,7 +33,7 @@ The following websites with the same gameplay as this site were examined for lay
 
 
 ### Images
-The image depicting the rules of the games were taken from [openclipart.org](https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock) and [wikipedia.org](https://en.wikipedia.org/wiki/Rock_paper_scissors). The images help to give visual representation of the rules of the game to the user.
+The image depicting the rules of the games were copied from [openclipart.org](https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock) and [wikipedia.org](https://en.wikipedia.org/wiki/Rock_paper_scissors). The images help to give visual representation of the rules of the game to the user.
 ![Rock Paper Scissors Lizard Spock Rules](assets/images/readme.md-images/rock-paper-scissors-lizard-spock-rules.png) ![Rock Paper Scissors Rules](assets/images/readme.md-images/rock-paper-scissors-rules.svg.png)
 
 ### Fonts
@@ -82,15 +82,26 @@ Raleway was chosen as the main font, with helvetica and sans-serif set as the al
 "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (startGame)." This warning was noted. The developer added comments to the function to prevent confusing semantics.
 
 4. LIGHTHOUSE
+
 ![Lighthouse results](assets/images/readme.md-images/lighthouse-report-2.png)
 
 ## Browser Display
 The completed site displays correctly on Google Chrome, Microsoft Edge and Safari browsers.
 Screen Sizes
+
 The completed site displays correctly on a variety of screen sizes, including desktop, tablet, iphone and Samsung phones.
-Desktop Display SCREENSHOT
-Tablet Display SCREENSHOT
-Mobile Display SCREENSHOT
+
+Desktop Display:
+
+![Desktop Display](assets/images/readme.md-images/desktop-view.png)
+
+Tablet Display:
+
+![Tablet Display](assets/images/readme.md-images/tablet-view.png)
+
+Mobile Display:
+
+![Mobile Display](assets/images/readme.md-images/mobile-view.png) 
 
 ## Technologies Used
 
@@ -112,31 +123,30 @@ Mobile Display SCREENSHOT
 - Used for version control.
 6. Github
 - Used to store the site's code once pushed from Git.
-7. ImageOptim
-- Used to compress the sites images to improve page speed.
+
 
 ## Deployment
 The site was deployed to GitHub pages as follows:
-Select settings in Github repository.
-Select pages from the sidebar.
-From the drop-down menu below the Source heading, select 'Deploy from a branch'.
-From the drop-down menu below the Branch heading, select main branch. Then select root from the folder drop-down menu.
-Select Save.
-The page will then show a ribbon display to indicate the successful deployment.
-The live link can be found here - INSERT LIVE LINK HERE
+1. Select settings in Github repository.
+2. Select pages from the sidebar.
+3. From the drop-down menu below the Source heading, select 'Deploy from a branch'.
+4. From the drop-down menu below the Branch heading, select main branch. Then select root from the folder drop-down menu.
+5. Select Save.
+6. The page will then show a ribbon display to indicate the successful deployment.
+7. The live link can be found here - INSERT LIVE LINK HERE
 
 
 ## Credits
 
 ### Content
-All text content and rules for the game were sourced from WIKIPEDIA LINK.
-The steps in the Deployment section of this README.md file was sourced from the Code Institute Sample ReadMe
+All text content and rules for the game were sourced from [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors).
+The steps in the Deployment section of this README.md file was sourced from the [Code Institute Sample ReadMe](https://github.com/Code-Institute-Solutions/SampleREADME)
+ELEGANT SOLUTION
 
 ### Media
-All images used were from Unsplash
-All icons used were from Font Awesome
-Colour scheme was selected using Coolors
-Flexbox Froggy was used to learn and impliment flex styling in the style.css file.
+Rules images were sourced from [openclipart.org](https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock) and [wikipedia.org](https://en.wikipedia.org/wiki/Rock_paper_scissors)
+All icons used were from [Font Awesome](https://fontawesome.com/)
+Colour scheme was selected using [Coolors](https://coolors.co/)
 
 ## Programming Solutions
 
