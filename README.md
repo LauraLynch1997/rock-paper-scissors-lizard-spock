@@ -33,42 +33,47 @@ The following websites with the same gameplay as this site were examined for lay
 
 
 ### Images
-The image depicting the rules of the games were taken from insert here . The images help to give visual representation of the rules of the game to the user.
-
+The image depicting the rules of the games were taken from [openclipart.org](https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock) and [wikipedia.org](https://en.wikipedia.org/wiki/Rock_paper_scissors). The images help to give visual representation of the rules of the game to the user.
+![Rock Paper Scissors Lizard Spock Rules](assets/images/readme.md-images/rock-paper-scissors-lizard-spock-rules.png) ![Rock Paper Scissors Rules](assets/images/readme.md-images/rock-paper-scissors-rules.svg.png)
 
 ### Fonts
 
-Fonts were chosen using Google Fonts
+Fonts were chosen using [Google Fonts](https://fonts.google.com/)
 
 Raleway was chosen as the main font, with helvetica and sans-serif set as the alternatives. Raleway was used on the love-maths project which the developer thought was visually pleasing and would suit the game being developed.
 
 
 ### Colour Scheme
 
-Colour scheme was selected using Coolors
+- Colour scheme was selected using [Coolors](https://coolors.co/)
+![Colour Scheme](assets/images/readme.md-images/colour-scheme.png)
+
+- Red and green were also used sparingly to better depict a win or lose situation for the user. If you win, the reason why is displayed in green text whereas if you lose, the reason why displays in red.
 
 ### Wireframes
 
-Desktop version
+- ![Desktop Wireframe](assets/images/readme.md-images/desktop-wireframe.png)
 
-Tablet version
+- ![Tablet Wireframe](assets/images/readme.md-images/tablet-wireframe.png)
 
-Mobile Version
+- ![Mobile Wireframe](assets/images/readme.md-images/mobile-wireframe.png)
 
 
 ## Testing
 
 ### Validator Testing
 1. HTML
-- HTML was tested with W3C Markup Validation Service
+- HTML was tested with [W3C Markup Validation Service](https://validator.w3.org/)
 - Initial testing showed some typescript errors that were easily corrected.
-- Initial testing also warned of empty h2 and h3 headings. This is due to what was it due to and commented accordingly to kerb any confusion when reading the code.
+- Initial testing also warned of empty h2 and h3 headings. These were filled in with prompts to avoid this issue.
+- 0 errors returned once warnings were fixed.
 
 2. CSS
-- CSS was tested with W3C CSS Validation Service
+- CSS was tested with [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - 0 errors returned.
 
 3. JAVASCRIPT
+- JS was tested with [JS Hint](https://jshint.com/)
 - Metrics:There are 14 functions in this file.
 - Function with the largest signature take 3 arguments, while the median is 1.
 - Largest function has 19 statements in it, while the median is 2.5.
@@ -77,9 +82,7 @@ Mobile Version
 "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (startGame)." This warning was noted. The developer added comments to the function to prevent confusing semantics.
 
 4. LIGHTHOUSE
-Initial testing in lighthouse showed poor performance of 46 due to image dimensions.
-Once dimensions were reduced, performance improved dramatically.
-Lighthouse results
+![Lighthouse results](assets/images/readme.md-images/lighthouse-report-2.png)
 
 ## Browser Display
 The completed site displays correctly on Google Chrome, Microsoft Edge and Safari browsers.
