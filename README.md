@@ -1,12 +1,13 @@
 # Rock Paper Scissors Lizard Spock
-Rock Paper Scissors Lizard Spock is a more advanced version of the classic hand game Rock Paper Scissors. The popularity of this version of the game emerged in 2008 after the airing of The Big Bang Theory episode that introduced the game originally created by Sam Kass and Karen Bryla http://www.samkass.com/theories/RPSSL.html. Many online versions of the game began to appear since then to entertain fans across the world wide web.
+Rock Paper Scissors Lizard Spock is a more advanced version of the classic hand game Rock Paper Scissors. The popularity of this version of the game emerged in 2008 after the airing of The Big Bang Theory episode that introduced the game originally created by [Sam Kass and Karen Bryla](http://www.samkass.com/theories/RPSSL.html). Many online versions of the game began to appear since then to entertain fans across the world wide web.
 
 This version of the game aided the developer in understanding and implementing the fundamentals of Java Script whilst also keeping user experience in mind.
+
 
 ## Existing Features:
 
 ### The Header Section
-This area contains the title of the game in the centre so users know exactly what game they are playing. A rules button to the left, once clicked, reveals an image depiction of the rules of the game for players to understand. written description for vision impaired users.
+This area contains the title of the game in the centre so users know exactly what game they are playing. A rules button to the left, once clicked, reveals an image depiction of the rules of the game for players to understand visually. A written description is also present for the use of screen-readers for vision impaired users.
 A dropdown button to the right, once clicked, gives the user the option of playing either the advanced Rock Paper Scissors Lizard Spock or the classic Rock Paper Scissors game against the computer, with the title changing depending on the game chosen.
 
 ### Game Area
@@ -33,7 +34,7 @@ The following websites with the same gameplay as this site were examined for lay
 
 
 ### Images
-The image depicting the rules of the games were copied from [openclipart.org](https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock) and [wikipedia.org](https://en.wikipedia.org/wiki/Rock_paper_scissors). The images help to give visual representation of the rules of the game to the user.
+The image depicting the rules of the games were sourced from [openclipart.org](https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock) and [wikipedia.org](https://en.wikipedia.org/wiki/Rock_paper_scissors). The images help to give visual representation of the rules of the game to the user.
 ![Rock Paper Scissors Lizard Spock Rules](assets/images/readme.md-images/rock-paper-scissors-lizard-spock-rules.png) ![Rock Paper Scissors Rules](assets/images/readme.md-images/rock-paper-scissors-rules.svg.png)
 
 ### Fonts
@@ -52,11 +53,17 @@ Raleway was chosen as the main font, with helvetica and sans-serif set as the al
 
 ### Wireframes
 
-- ![Desktop Wireframe](assets/images/readme.md-images/desktop-wireframe.png)
+- Desktop Wireframe:
 
-- ![Tablet Wireframe](assets/images/readme.md-images/tablet-wireframe.png)
+ ![Desktop Wireframe](assets/images/readme.md-images/desktop-wireframe.png)
 
-- ![Mobile Wireframe](assets/images/readme.md-images/mobile-wireframe.png)
+- Tablet Wireframe:
+
+ ![Tablet Wireframe](assets/images/readme.md-images/tablet-wireframe.png)
+
+- Mobile Wireframe:
+
+ ![Mobile Wireframe](assets/images/readme.md-images/mobile-wireframe.png)
 
 
 ## Testing
@@ -82,6 +89,7 @@ Raleway was chosen as the main font, with helvetica and sans-serif set as the al
 "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (startGame)." This warning was noted. The developer added comments to the function to prevent confusing semantics.
 
 4. LIGHTHOUSE
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to generate a lighthouse report.
 
 ![Lighthouse results](assets/images/readme.md-images/lighthouse-report-2.png)
 
@@ -111,22 +119,22 @@ Mobile Display:
 - JavaScript
 
 ### Frameworks, Libraries & Programs Used
-1. Balsamiq
+1. [Balsamiq](https://balsamiq.com/)
 - Used to create wireframes for the site prior to coding.
-2. Google Fonts
+2. [Google Fonts](https://fonts.google.com/)
 - Used to import selected fonts into style.css file.
-3. Font Awesome
+3. [Font Awesome](https://fontawesome.com/)
 - Used to add icons to buttons.
-4. Coolers
+4. [Coolors](https://coolors.co/)
 - Used to select a simplistic, pleasing colour pallet.
-5. Git
+5. [Git](https://gitpod.io)
 - Used for version control.
-6. Github
+6. [Github](https://github.com/)
 - Used to store the site's code once pushed from Git.
 
 
 ## Deployment
-The site was deployed to GitHub pages as follows:
+The site was deployed to [Github](https://github.com/) pages as follows:
 1. Select settings in Github repository.
 2. Select pages from the sidebar.
 3. From the drop-down menu below the Source heading, select 'Deploy from a branch'.
@@ -139,9 +147,9 @@ The site was deployed to GitHub pages as follows:
 ## Credits
 
 ### Content
-All text content and rules for the game were sourced from [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors).
-The steps in the Deployment section of this README.md file was sourced from the [Code Institute Sample ReadMe](https://github.com/Code-Institute-Solutions/SampleREADME)
-ELEGANT SOLUTION
+- All text content and rules for the game were sourced from [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors).
+- The steps in the Deployment section of this README.md file was sourced from the [Code Institute Sample ReadMe](https://github.com/Code-Institute-Solutions/SampleREADME).
+- The algorithm used for the JS function was sourced from ELEGANT SOLUTION
 
 ### Media
 Rules images were sourced from [openclipart.org](https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock) and [wikipedia.org](https://en.wikipedia.org/wiki/Rock_paper_scissors)
